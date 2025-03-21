@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: minhafonte;
+    src: url(fonts/Montserrat-Black.ttf);
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #024959;
+    padding: 20px 0px 30px 0px;
+    font-family: minhafonte;
+    box-shadow: 2px 1px 5px 1px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 35px;
+    vertical-align: middle;
+    height: auto;
+}
+.nomeempresa{
+    vertical-align: middle;
+    color: #012E40;
+}
+#empresanome{
+    vertical-align: middle;
+    color: #3CA6A6;
+}
+.menu{
+    display: flex;
+    align-items: center;}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #026773;
+    border-radius: 50px;
+}
+.menu a:hover{
+    color: black;
+    background-color: #012E40;
+    transition-duration: 0.5s;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu a:hover{
+        color: black;
+        background-color: #012E40;
+        transition-duration: 0.5s;
+    }
+}
