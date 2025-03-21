@@ -64,6 +64,7 @@ header{
 }
 .menu a:active{
     border-radius: 50px;
+    background-color: #05384d;
 }
 /* Tela Retrato de celular */
 @media (orientation: portrait) {
