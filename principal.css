@@ -60,6 +60,7 @@ header{
     background-color: #05384d;
     transition-duration: 0.5s;
     cursor: pointer;
+    border-radius: 50px;
 }
 /* Tela Retrato de celular */
 @media (orientation: portrait) {
