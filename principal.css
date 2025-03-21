@@ -62,6 +62,9 @@ header{
     cursor: pointer;
     border-radius: 50px;
 }
+.menu a:active{
+    border-radius: 50px;
+}
 /* Tela Retrato de celular */
 @media (orientation: portrait) {
     header {
