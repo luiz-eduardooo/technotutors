@@ -39,12 +39,12 @@ header{
 }
 .menu{
     display: flex;
-    align-items: center;}
+    align-items: center
+}
 .menu ul{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
 }
 .menu a{
     text-decoration: none;
@@ -52,11 +52,13 @@ header{
     padding: 10px 15px;
     background-color: #026773;
     border-radius: 50px;
+    margin-right: 20px;
 }
 .menu a:hover{
     color: black;
     background-color: #012E40;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     header {
@@ -80,5 +82,6 @@ header{
         color: black;
         background-color: #012E40;
         transition-duration: 0.5s;
+        cursor: pointer;
     }
 }
