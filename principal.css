@@ -8,7 +8,16 @@
     font-family: minhafonte;
     src: url(fonts/Montserrat-Black.ttf);
 }
-
+body, html{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 header{
     width: 100vw;
     display: flex;
@@ -17,7 +26,7 @@ header{
     background-color: #024959;
     padding: 20px 0px 30px 0px;
     font-family: minhafonte;
-    box-shadow: 2px 1px 5px 1px;
+    box-shadow: 2px 1px 5px 1px black;
 }
 .logo{
     display: flex;
@@ -66,29 +75,121 @@ header{
     border-radius: 50px;
     background-color: #05384d;
 }
-/* Tela Retrato de celular */
-@media (orientation: portrait) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .menu a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .menu a:hover{
-        color: black;
-        background-color: #05384d;
-        transition-duration: 0.5s;
-        cursor: pointer;
-    }
+main{
+    background-color: white;
+    width: 100%;
+    font-family: minhafonte;
+    box-shadow: 2px 1px 5px 1px;
+}
+#img{
+    background-image: url(midia/imagem.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 2px 1px 5px 1px;
+    background-attachment: fixed;
+}
+#msg{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 3em;
+    color: #fff;
+    border-radius: 15px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+#msg h1{
+    font-size: 2.3em;
+}
+#msg p{
+    font-size: 1.2;
+}
+#msg a{
+    text-decoration: none;
+    color: #3CA6A6;
+    width: 30%;
+    cursor: pointer;
+}
+#msg a:hover{
+    color: #05384d;
+}
+#dois{
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 15px;
+}
+#dois h1{
+    font-size: 2em;
+    margin-left: 30px;
+    color: #3CA6A6;
+    padding-top: 10px;
+}
+#dois > p{
+    margin-top: 10px;
+    font-size: 1.3em;
+    margin-left: 30px;
+}
+.spacediv{
+    display: flex;
+}
+.secaodiv img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.secaodiv{
+    width: 350px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 0px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.secaodiv p{
+    color: #026773;
+}
+footer{
+    padding: 10px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(midia/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.divspace{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.divsecao{
+    margin-left: 10px;
+    color: white;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1fb1f0;
+}
+.footer > p{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1fb1f0;
 }

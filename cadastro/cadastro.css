@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+        /*Centralizando o formulário*/
+        body{
+            background: linear-gradient(135deg, #024959, #026773);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /*Estrutura do formulário*/
+        #container{
+            background-color: white;
+            width: 350px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px black;
+        }
+        #container h2{
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 5px;
+            color: #012E40;
+        }
+        /*Estrutura dos inputs*/
+        .input-group input{
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .input-group label{
+            font-weight: 600;
+        }
+        /*Botão(cor, animação, tamanho, etc)*/
+        .btn{
+            width: 100%;
+            border: none;
+            background-color: #3CA6A6;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background-color: #012E40;
+            color: white;
+        }
+        /*Redirecionamento de página*/
+        .login-link{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .login-link a{
+            text-decoration: none;
+        }
+        .volta a{ 
+            color: #3CA6A6;
+        }
