@@ -17,6 +17,7 @@ body, html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 header{
     width: 100vw;
