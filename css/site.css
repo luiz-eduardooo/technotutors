@@ -145,9 +145,11 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    height: 400px;
 }
 .secaodiv p{
     color: #026773;
+    font-size: 1.3em;
 }
 footer{
     padding: 10px;
