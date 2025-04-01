@@ -1,11 +1,8 @@
 function js() {
     let msg = window.document.querySelector('div.secaodiva');
 
-    let paragraph = document.createElement('p');
-    paragraph.textContent = '🚀 JavaScript - Crie sites interativos e dinâmicos. Aprenda manipulação do DOM, eventos, requisições assíncronas e frameworks modernos.';
     
-    msg.innerHTML = '';  
-    msg.appendChild(paragraph);  
+    msg.innerHTML = '🚀 JavaScript - Crie sites interativos e dinâmicos. Aprenda manipulação do DOM, eventos, requisições assíncronas e frameworks modernos.'; 
 }
 function html(){
     let html = window.document.querySelector('div.secaodivb')
