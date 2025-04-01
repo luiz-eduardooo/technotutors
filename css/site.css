@@ -124,7 +124,7 @@ main{
 #dois{
     width: 100%;
     min-height: 80vh;
-    background-color: rgba(220, 220, 220, 0.315);
+    background-color: #48dddd25;
 }
 #dois h1{
     font-size: 2em;
@@ -226,7 +226,7 @@ h4{
 }
 #quatro{
     padding: 30px;
-    background-color: rgba(220, 220, 220, 0.315);
+    background-color: #48dddd25;
 }
 #quatro > h1{
     font-size: 4em;
