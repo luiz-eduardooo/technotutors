@@ -234,26 +234,26 @@ h4{
     margin-top: 30px;
     margin-left: 30px;
 }
-.marcacao{
+#marcacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#quatro > .marcacao > h2{
+#quatro > #marcacao > h2{
     font-size: 1.5em;
     margin-top: 20px;
     margin-left: 30px;
 }
-.marcacao ul{
+#marcacao ul{
     list-style-type: none;
     margin-top: 20px;
 }
-.marcacao li{
+#marcacao li{
         list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue"><path d="M9 16.2l-4.2-4.2L3 14l6 6 12-12-1.8-1.8z"/></svg>');
         padding-left: 10px;
         font-size: 1.2em;
 }
-.planos{
+#planos{
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
@@ -290,6 +290,9 @@ h4{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
 }
 .planoa p, .planob p, .planoc p{
     margin-top: 60px;
@@ -339,4 +342,7 @@ footer{
 }
 .footer a:hover{
     color: white;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
