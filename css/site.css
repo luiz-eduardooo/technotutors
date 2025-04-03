@@ -260,18 +260,21 @@ h4{
     justify-content: space-between;
     margin-left: 30px;
     color: #389c9c;
-    box-shadow: 0px 0px 6px #1fb1f0;
     border-radius: 10px;
     background-color: #48dddd25;
+    box-shadow: 0px 0px 6px #00a7ee;
 }
 .planoa, .planob, .planoc{
-    background-color: #3ca6a662;
+    background-color: #22e2e262;
     padding: 20px;
-    width: 25%;
+    width: 32%;
     text-align: center;
+    color: #024959;
+    box-shadow: 0px 0px 6px #00a7ee;
 }
 .planoa:hover, .planob:hover, .planoc:hover{
     background-color: #024959;
+    color: #00a7ee;
 }
 .planoa h1, .planob h1, .planoc h1{
     font-size: 2.5em;
@@ -282,13 +285,12 @@ h4{
     padding: 20px;
     border-radius: 10px;
     text-decoration: none;
-    color: white;
     background-color: #3CA6A6;
     cursor: pointer;
-
+    color: white;
 }
 .planoa a:hover, .planob a:hover, .planoc a:hover{
-    color: #3CA6A6;
+    color: #024959;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -299,7 +301,7 @@ h4{
 .planoa p, .planob p, .planoc p{
     margin-top: 60px;
     margin-bottom: 60px;
-    color: rgb(31, 30, 30);
+    /*color: rgb(31, 30, 30);*/
     font-size: 1.3em;
     text-shadow: 0px 1px 1px #28373d;
 }
@@ -308,6 +310,10 @@ h4{
 }
 .planoc{
     border-radius: 0px 10px 10px 0px;
+}
+.planoa h2, .planob h2, .planoc h2{
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 footer{
     padding: 10px;
