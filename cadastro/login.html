@@ -1,32 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do conteúdo como português do Brasil -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Technotutors</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Login Technotutors</title> <!-- Título da aba no navegador -->
+    <link rel="stylesheet" href="../css/cadastro.css"> <!-- Link para o arquivo CSS (mesmo usado no cadastro) -->
 </head>
+
 <body>
-    <div id="container">
-        <h2>Login</h2>
-    <!--Parte dos inputs(email e senha)-->
-    <form>
-        <div class="input-group">
-            <label for="iemail">Email</label>
-            <input type="email" name="email" id="iemail" required>
+    <div id="container"> <!-- Container principal da tela de login -->
+        <h2>Login</h2> <!-- Título da seção -->
+
+        <!-- Parte dos inputs (email e senha) -->
+        <form>
+            <div class="input-group"> <!-- Grupo do campo de email -->
+                <label for="iemail">Email</label> <!-- Rótulo do campo de email -->
+                <input type="email" name="email" id="iemail" required> <!-- Campo de email obrigatório -->
+            </div>
+
+            <div class="input-group"> <!-- Grupo do campo de senha -->
+                <label for="isenha">Senha</label> <!-- Rótulo do campo de senha -->
+                <input type="password" name="senha" id="isenha" minlength="8" required> <!-- Campo de senha com mínimo de 8 caracteres -->
+            </div>
+
+            <!-- Botão para acessar a conta -->
+            <button class="btn">
+                Entrar
+            </button>
+        </form>
+
+        <!-- Parte de redirecionamento para cadastro e voltar ao site -->
+        <div class="login-link">
+            Ainda não tem uma conta? <a href="cadadastre-se.html">Cadastre-se</a> <br> <!-- Link para a página de cadastro -->
+            <span class="volta"><a href="../index.html">Voltar para o site</a></span> <!-- Link para voltar à página inicial -->
         </div>
-        <div class="input-group">
-            <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" minlength="8" required>
-        </div>
-    <!--Botão para acessar a conta-->
-        <button class="btn">
-            Entrar
-        </button>
-    </form>
-    <!--Parte de redirecionamento ao menu de cadastro!-->
-    <div class="login-link">Ainda não tem uma conta? <a href="cadadastre-se.html">  Cadastre-se</a> <br>
-    <span class="volta"><a href="../index.html">Voltar para o site</a></span></div>
-        </div>
+    </div>
 </body>
+
 </html>

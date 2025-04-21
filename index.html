@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define o conjunto de caracteres para o site -->
     <meta charset="UTF-8">
+    <!-- Garante que o site seja responsivo em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
     <title>TechnoTutors</title>
+    <!-- Ícone da aba -->
     <link rel="shortcut icon" href="midia/icon1.ico" type="image/x-icon">
+    <!-- Importa o CSS externo -->
     <link rel="stylesheet" href="css/site.css">
+    <!-- Fonte de ícone para as redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+
+    <!-- Nome dos integrantes do grupo -->
+    <!-- Luiz Eduardo -->
+    <!-- Italo Cardoso -->
+    <!-- Maikel Gudryan -->
+    <!-- Fabio Ferreira  -->
+
+    <!-- Início do cabeçalho do site -->
     <header>
-        <!-- Logo e nome da empresa -->
+        <!-- Logo da empresa com título -->
         <div class="logo">
             <img src="midia/icon1.ico" alt="Icon TechnoTutors">
             <h2><span class="nomeempresa">Techno</span><span id="empresanome">Tutors</span></h2>
         </div>
 
-        <!-- Menu -->
+        <!-- Menu de navegação -->
         <nav class="menu">
             <ul>
                 <li><a href="#tres">Alunos</a></li>
@@ -26,7 +42,10 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Seção inicial com imagem e mensagem principal -->
         <section id="img">
             <div id="msg">
                 <h1>A melhor plataforma de cursos no Brasil <br> vem com a <span class="cor">TechnoTutors!</span></h1>
@@ -34,53 +53,74 @@
                 <p>Venha fazer parte da nossa equipe!!</p>
             </div>
         </section>
+
+        <!-- Seção de apresentação dos cursos -->
         <section id="dois">
             <h1>TechnoTutors</h1>
-            <p>A TechnoTutors é a plataforma ideal para quem quer aprender tecnologia e programação de forma prática e eficiente. Conectamos você a tutores experientes e oferecemos cursos interativos em PHP, JavaScript, HTML5, JAVA e muito mais. Do iniciante ao avançado, nosso conteúdo é personalizado para acelerar sua evolução e preparar você para o mercado digital!
-                </p>
-                    <h1>Nossos cursos abaixo:</h1>
+            <p>A TechnoTutors é a plataforma ideal para quem quer aprender tecnologia e programação de forma prática e eficiente. Conectamos você a tutores experientes e oferecemos cursos interativos em PHP, JavaScript, HTML5, JAVA e muito mais.</p>
+            <h1>Nossos cursos abaixo:</h1>
+
+            <!-- Blocos com os cursos disponíveis -->
             <div class="spacediv">
-                <div class="secaodiva" onmouseenter="js()" onmouseout="sair1()"><img src="midia/js.png" alt="Javascript"> <p>Javascript</p></div>
-                <div class="secaodivb" onmouseenter="html()" onmouseout="sair2()"><img src="midia/html.png" alt="Html"> <p>Html 5</p> </div>
-                <div class="secaodivc" onmouseenter="java()" onmouseout="sair3()"><img src="midia/java.png" alt="Java"> <p>Java</p></div>
-                <div class="secaodivd" onmouseenter="php()" onmouseout="sair4()"><img src="midia/php.png" alt="Php"> <p>PHP</p> </div>
+                <div class="secaodiva" onmouseenter="js()" onmouseout="sair1()">
+                    <img src="midia/js.png" alt="Javascript">
+                    <p>Javascript</p>
+                </div>
+                <div class="secaodivb" onmouseenter="html()" onmouseout="sair2()">
+                    <img src="midia/html.png" alt="Html">
+                    <p>Html 5</p>
+                </div>
+                <div class="secaodivc" onmouseenter="java()" onmouseout="sair3()">
+                    <img src="midia/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="secaodivd" onmouseenter="php()" onmouseout="sair4()">
+                    <img src="midia/php.png" alt="Php">
+                    <p>PHP</p>
+                </div>
             </div>
         </section>
+
+        <!-- Seção de depoimentos -->
         <section id="tres">
             <h2>Depoimentos</h2>
             <h1>O QUE OS CLIENTES DIZEM</h1>
-            <h2>Atribuimos um grande valor a relacionamentos sólidos e vimos os benefícios que eles trazem para o nosso negócio. O feedback do cliente é vital para nos ajudar a acertar!</h2>
+            <h2>O feedback do cliente é vital para nos ajudar a acertar!</h2>
+
+            <!-- Bloco com cada depoimento -->
             <div class="depoimentos">
                 <div class="pessoas">
                     <img src="midia/mulher1.jpg" alt="mulher.depoimento">
-                    <p>"Sempre tive dificuldade em entender como os servidores funcionam, mas os cursos de PHP da TechnoTutors explicaram tudo de forma clara e prática. Agora, já consigo desenvolver meus próprios sistemas e integrar bancos de dados!"</p>
+                    <p>"Sempre tive dificuldade em entender como os servidores funcionam..."</p>
                     <h3>Juliana Nascimento</h3>
                     <h4>Estudante de Tecnologia</h4>
                 </div>
                 <div class="pessoas">
                     <img src="midia/mulher2.jpg" alt="mulher.depoimentos">
-                    <p>"Estava buscando uma plataforma que ensinasse programação de forma prática e acessível. A TechnoTutors me ajudou a dominar PHP e JavaScript, e agora estou desenvolvendo sistemas completos para web!"</p>
+                    <p>"Estava buscando uma plataforma que ensinasse programação..."</p>
                     <h3>Camila Rocha</h3>
                     <h4>Programadora Full Stack</h4>
                 </div>
                 <div class="pessoas">
                     <img src="midia/homem1.jpg" alt="homem.depoimento">
-                    <p>"A combinação dos cursos de HTML5, PHP e JavaScript da TechnoTutors foi essencial para minha carreira como freelancer. Hoje, consigo criar sites dinâmicos e personalizados para meus clientes!"</p>
+                    <p>"A combinação dos cursos foi essencial para minha carreira como freelancer."</p>
                     <h3>Rafael Almeida</h3>
                     <h4>Freelancer em Desenvolvimento Web</h4>
                 </div>
                 <div class="pessoas">
                     <img src="midia/homem2.png" alt="homem.depoimentos">
-                    <p>"Sempre quis criar meus próprios sites, mas não sabia por onde começar. Com os cursos de HTML5 e JavaScript da TechnoTutors, aprendi desde o básico até técnicas avançadas. Hoje, já consigo desenvolver páginas responsivas e interativas!"</p>
+                    <p>"Sempre quis criar meus próprios sites, mas não sabia por onde começar..."</p>
                     <h3>Pedro Gomes</h3>
                     <h4>Desenvolvedor Front-end</h4>
                 </div>
             </div>
         </section>
+
+        <!-- Seção de planos -->
         <section id="quatro">
             <h1>Comprar</h1>
             <div id="marcacao">
-                <h2>Comece a usar a plataforma da <span class="cor">Technotutors</span> <br> para aprender e aprimorar seus conhecimentos em <br> programação com o melhor custo-benefício do mercado!!!</h2>
+                <h2>Comece a usar a plataforma da <span class="cor">Technotutors</span> para aprender com o melhor custo-benefício!</h2>
                 <ul>
                     <li>Cursos Gratuitos</li>
                     <li>Suporte 24 horas por dia, 7 dias por semana</li>
@@ -89,33 +129,38 @@
                 <ul>
                     <li>Plataforma Online</li>
                     <li>Aprendizado especializado</li>
-                    <li>Estagios remunerados</li>
+                    <li>Estágios remunerados</li>
                 </ul>
             </div>
+
+            <!-- Planos disponíveis para compra -->
             <div id="planos">
                 <div class="planoa">
                     <h2>Plano Inicial</h2>
                     <h1>Livre</h1>
                     <a href="#">Plano Gratuito</a>
-                    <p>Cursos grauitos na Technotutors</p>
+                    <p>Cursos gratuitos na Technotutors</p>
                 </div>
                 <div class="planob">
                     <h2>Plano Mensal</h2>
                     <h1>R$ 50 /mês</h1>
                     <a href="#">Proceda Mensalmente</a>
-                    <p>Cursos Especializantes na TechnoTutors com Mentorias de Profissionais e Plataforma Exclusiva, com diversos Cursos!</p>
+                    <p>Cursos com mentorias de profissionais e plataforma exclusiva</p>
                 </div>
                 <div class="planoc">
                     <h2>Plano Anual</h2>
                     <h1>R$ 90 /mês</h1>
                     <a href="#">Proceda Anualmente</a>
-                    <p>Cursos Especializantes e Estágios na Technotutors com Mentorias ao vivo com Profissionais e Plataforma Exclusiva, com diversos Cursos!!</p>
+                    <p>Estágios, mentorias ao vivo e plataforma exclusiva com diversos cursos!</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Rodapé do site -->
     <footer>
         <div class="divspace">
+            <!-- Links do mapa do site -->
             <div class="divsecao">
                 <h2>MAPA DO SITE</h2>
                 <div class="footer">
@@ -124,6 +169,8 @@
                     <a href="#quatro">Serviços</a>
                 </div>
             </div>
+
+            <!-- Informações da empresa -->
             <div class="divsecao">
                 <h2>A EMPRESA</h2>
                 <div class="footer">
@@ -132,24 +179,32 @@
                     <a href="#marcacao">Vantagens</a>
                 </div>
             </div>
+
+            <!-- Contato -->
             <div class="divsecao">
                 <h2>CONTATO</h2>
                 <div class="footer">
                     <p>Endereço Technotutors, 123</p>
-                    <p>Telefone:32999875202</p>
+                    <p>Telefone: 32999875202</p>
                     <p>e-mail: contato@Technotutors.com</p>
                 </div>
             </div>
+
+            <!-- Redes sociais -->
+            <!-- Redes sociais -->
             <div class="divsecao">
                 <h2>SOCIAL</h2>
                 <div class="footer">
-                    <a href="#">Instagram</a>
-                    <a href="#">Youtube</a>
-                    <a href="#">Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
                 </div>
             </div>
+
         </div>
     </footer>
+
+    <!-- Script JavaScript para os efeitos nos cursos -->
     <script src="javascript/plano.js"></script>
 </body>
 </html>

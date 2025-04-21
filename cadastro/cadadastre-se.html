@@ -1,38 +1,49 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define que este documento é do tipo HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do conteúdo como português do Brasil -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 (suporta acentuação) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <title>Document</title> <!-- Título da aba no navegador -->
+    <link rel="stylesheet" href="../css/cadastro.css"> <!-- Vincula o arquivo CSS externo para estilização -->
 </head>
+
 <body>
-    <div id="container">
-        <h2>Cadastre-se</h2>
-                    <!--Parte Dos inputs(usuario, email, senha)-->
-    <form>
-        <div class="input-group">
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required >
+    <div id="container"> <!-- Container principal da página -->
+        <h2>Cadastre-se</h2> <!-- Título do formulário -->
+
+        <!-- Parte dos inputs (nome, email, senha, repetir senha) -->
+        <form>
+            <div class="input-group"> <!-- Grupo de input para nome -->
+                <label for="inome">Nome</label> <!-- Rótulo do campo -->
+                <input type="text" name="nome" id="inome" required> <!-- Campo de texto para o nome -->
+            </div>
+
+            <div class="input-group"> <!-- Grupo de input para email -->
+                <label for="iemail">Email</label> <!-- Rótulo do campo -->
+                <input type="email" name="" id="" required> <!-- Campo de texto para o email -->
+            </div>
+
+            <div class="input-group"> <!-- Grupo de input para senha -->
+                <label for="isenha">Senha</label> <!-- Rótulo do campo -->
+                <input type="password" name="senha" id="isenha" required minlength="8"> <!-- Campo de senha com mínimo de 8 caracteres -->
+            </div>
+
+            <div class="input-group"> <!-- Grupo de input para repetir senha -->
+                <label for="irepetir">Repita sua senha</label> <!-- Rótulo do campo -->
+                <input type="password" name="repetir_senha" id="irepetir" required> <!-- Campo para confirmação da senha -->
+            </div>
+
+            <!-- Parte do botão de enviar o cadastro -->
+            <button type="submit" class="btn">Cadastrar</button> <!-- Botão de envio do formulário -->
+        </form>
+
+        <!-- Parte para redirecionar ao menu de login ou voltar para o site -->
+        <div class="login-link">
+            Já tem uma conta? <a href="login.html">Entrar</a> <br> <!-- Link para página de login -->
+            <span class="volta"><a href="../index.html">Voltar para o site</a></span> <!-- Link para voltar para a página inicial -->
         </div>
-        <div class="input-group">
-            <label for="iemail">Email</label>
-                <input type="email" name="" id="" required>
-        </div>
-        <div class="input-group">
-            <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" >
-        </div>
-        <div class="input-group">
-            <label for="irepetir">Repita sua senha</label>
-            <input type="password" name="repetir_senha" id="irepetir" required >
-        </div>
-                     <!--Parte do botão de enviar o cadastro-->
-        <button type="submit" class="btn">Cadastrar</button>
-    </form>
-                    <!--Parte para redirecionar ao menu de login-->
-    <div class="login-link">Ja tem uma conta? <a href="login.html">Entrar</a> <br>
-    <span class="volta"><a href="../index.html">Voltar para o site</a></span></div>
-</div>
+    </div>
 </body>
+
 </html>

@@ -1,62 +1,71 @@
-@charset "utf-8";
+@charset "utf-8"; /* Define o charset como UTF-8 para suportar caracteres especiais */
 
-        /*Centralizando o formulário*/
-        body{
-            background: linear-gradient(135deg, #024959, #026773);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        /*Estrutura do formulário*/
-        #container{
-            background-color: white;
-            width: 350px;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px black;
-        }
-        #container h2{
-            text-align: center;
-            font-weight: bolder;
-            margin-top: 5px;
-            color: #012E40;
-        }
-        /*Estrutura dos inputs*/
-        .input-group input{
-            width: 97%;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            border: 1px solid black;
-            margin-top: 10px;
-            padding: 5px;
-        }
-        .input-group label{
-            font-weight: 600;
-        }
-        /*Botão(cor, animação, tamanho, etc)*/
-        .btn{
-            width: 100%;
-            border: none;
-            background-color: #3CA6A6;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .btn:hover{
-            background-color: #012E40;
-            color: white;
-        }
-        /*Redirecionamento de página*/
-        .login-link{
-            text-align: center;
-            margin-top: 5px;
-        }
-        .login-link a{
-            text-decoration: none;
-        }
-        .volta a{ 
-            color: #3CA6A6;
-        }
+/* Centralizando o formulário */
+body{
+    background: linear-gradient(135deg, #024959, #026773); /* Define um gradiente de fundo */
+    display: flex; /* Utiliza Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 100vh; /* Garante que a altura do body ocupe 100% da tela */
+}
+
+/* Estrutura do formulário */
+#container{
+    background-color: white; /* Define o fundo do container como branco */
+    width: 350px; /* Largura do formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px black; /* Adiciona uma sombra ao redor do formulário */
+}
+
+#container h2{
+    text-align: center; /* Alinha o título no centro */
+    font-weight: bolder; /* Torna o título mais grosso */
+    margin-top: 5px; /* Adiciona margem superior ao título */
+    color: #012E40; /* Cor do título */
+}
+
+/* Estrutura dos inputs */
+.input-group input{
+    width: 97%; /* Largura dos inputs */
+    border-radius: 5px; /* Bordas arredondadas para os inputs */
+    margin-bottom: 20px; /* Espaço inferior entre os inputs */
+    border: 1px solid black; /* Borda preta para os inputs */
+    margin-top: 10px; /* Espaço superior entre o label e o input */
+    padding: 5px; /* Preenchimento interno dos inputs */
+}
+
+.input-group label{
+    font-weight: 600; /* Deixa o rótulo mais grosso */
+}
+
+/* Botão (cor, animação, tamanho, etc) */
+.btn{
+    width: 100%; /* Largura do botão ocupa 100% do espaço disponível */
+    border: none; /* Remove a borda padrão */
+    background-color: #3CA6A6; /* Cor de fundo do botão */
+    padding: 10px; /* Preenchimento interno do botão */
+    border-radius: 10px; /* Bordas arredondadas no botão */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Modifica o cursor para uma mãozinha ao passar sobre o botão */
+    transition: 0.3s; /* Transição suave ao passar o mouse sobre o botão */
+}
+
+.btn:hover{
+    background-color: #012E40; /* Cor de fundo ao passar o mouse */
+    color: white; /* Muda a cor do texto para branco quando hover */
+}
+
+/* Redirecionamento de página */
+.login-link{
+    text-align: center; /* Centraliza o conteúdo do link */
+    margin-top: 5px; /* Espaço superior para separar o link do formulário */
+}
+
+.login-link a{
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.volta a{ 
+    color: #3CA6A6; /* Cor personalizada para o link de "voltar para o site" */
+}
